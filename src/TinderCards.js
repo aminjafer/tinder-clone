@@ -3,16 +3,7 @@ import TinderCard from "react-tinder-card";
 import "./TinderCards.css";
 
 function TinderCards() {
-    const [people, setPeople] = useState([
-        {
-            name: 'Elon Musk',
-            url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg/800px-Elon_Musk_Royal_Society_%28crop2%29.jpg'
-        },
-        {
-            name: 'Jeff Bezos',
-            url: 'https://upload.wikimedia.org/wikipedia/commons/0/03/Jeff_Bezos_visits_LAAFB_SMC_%283908618%29_%28cropped%29.jpeg'
-        },
-    ]);
+    const [people, setPeople] = useState([]);
 
     const swiped = (direction, nameToDelete) => {
         console.log("removing: " + nameToDelete);
